@@ -1,0 +1,1434 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:kx="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13">
+        <owl:imports rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK"/>
+        <dc:creators rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kathrine
+Xi</dc:creators>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12-11-2018</dc:date>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creators -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creators"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Gloss -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Gloss"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#POS -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#POS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Parent_ID -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Parent_ID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Synonym"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Synset_ID -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Synset_ID"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime -->
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacyHasDrug -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacyHasDrug"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasDiagnosis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasDiagnosis">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isDiagnosisOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasDiseaseCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasDiseaseCause">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isDiseaseCauseOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasDrugTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasDrugTreatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasTreatment"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isDrugTreatmentFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasNonDrugTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasNonDrugTreatment">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasTreatment"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isNonDrugTreatmentFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasPrevention -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasPrevention">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isPreventionOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasRiskFactor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasRiskFactor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isRiskFactorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasRiskGroup -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasRiskGroup">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isRiskGroupOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasSideEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasSideEffect">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isSideEffectOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrugTreatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasSymptom">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isSymptomOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasTransmission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasTransmission">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isTransmissionOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasTreatment">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isTreatmentFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isDiagnosisOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isDiagnosisOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isDiseaseCauseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isDiseaseCauseOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isDrugTreatmentFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isDrugTreatmentFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isTreatmentFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isNonDrugTreatmentFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isNonDrugTreatmentFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isTreatmentFor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isPreventionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isPreventionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isRiskFactorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isRiskFactorOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isRiskGroupOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isRiskGroupOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isSideEffectOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isSideEffectOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isSymptomOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isSymptomOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isTransmissionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isTransmissionOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isTreatmentFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#isTreatmentFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#locatedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AddressDetails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AddressDetails"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrugEatenType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrugEatenType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SiteOfInfection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SiteOfInfection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#buyWithPrescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#buyWithPrescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drugBrandName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drugBrandName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drugBrandPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drugBrandPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrugTreatment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drugName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drugName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#duration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#endTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#endTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacyName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#openTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#openTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AntibioticsDrugTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AntibioticsDrugTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrugTreatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02719777</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AntiviralsDrugTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AntiviralsDrugTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrugTreatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">02728292</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BacterialInfection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BacterialInfection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#VirusInfection"/>
+        <Gloss rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Infection by a bacteria that is pathogenic to humans</Gloss>
+        <POS>noun</POS>
+        <Parent_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14198031</Parent_ID>
+        <Synonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacteria infection</Synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Cause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Cause">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Event"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#City"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Prevention"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Transmission"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">00007347</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Location"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Prevention"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Transmission"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">08542298</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Chemical_Stuff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Prevention"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">00153547</Synset_ID>
+        <rdfs:comment></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrugTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrugTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#NonDrugTreatment"/>
+        <Gloss>Treatment of illness with pharmaceutical drugs</Gloss>
+        <POS>noun</POS>
+        <Parent_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">00659325</Parent_ID>
+        <Synonym>Medicine treatment, Pharmaceutical drug treatment, Medical treatment</Synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Situation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasDiagnosis"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasRiskGroup"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#duration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Prevention"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14198031</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LifeStylePrevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LifeStylePrevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Prevention"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#VaccinePrevention"/>
+        <Gloss>The act of preventing by changing ones lifestyle</Gloss>
+        <POS>noun</POS>
+        <Parent_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01081219</Parent_ID>
+        <Synonym>prophylactic lifestyle</Synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#NonDrugTreatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#NonDrugTreatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrugTreatment"/>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <Gloss>Treatment of illness without pharmaceutical drugs</Gloss>
+        <POS>Non-medicine treatment, Non-pharmaceutical drug treatment, Non-medical treatment</POS>
+        <POS>noun</POS>
+        <Parent_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">00659325</Parent_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Organization"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#locatedIn"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AddressDetails"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#endTime"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#openTime"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Prevention"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">03254045</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Prevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Prevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Destroy"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">01081219</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Event"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Transmission"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">05100555</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Role"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <Gloss>Group of people who are at higher risk of getting a specific infection or develop severe disease if infected.</Gloss>
+        <POS>noun</POS>
+        <Parent_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">07958392</Parent_ID>
+        <Synonym>high-risk group</Synonym>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Event"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14323139</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Serve"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">07375247</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Event"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">00659325</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#VaccinePrevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#VaccinePrevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Prevention"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">04524830</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#VirusInfection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#VirusInfection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <Synset_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14209822</Synset_ID>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AbdominalCramps -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AbdominalCramps">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AbdominalPain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AbdominalPain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BacteriaInUrianryTract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BacteriaInUrianryTract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Cause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BetterFoodHygiene -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BetterFoodHygiene">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LifeStylePrevention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BetterPersonalHygiene -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BetterPersonalHygiene">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LifeStylePrevention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Blisters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Blisters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BloodInStool -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BloodInStool">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BloodInUrine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BloodInUrine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BloodTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BloodTest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BlurredVision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BlurredVision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#CatheterUse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#CatheterUse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#CheeseProducts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#CheeseProducts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Children -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Children">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Chills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Chills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Constipation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Constipation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ContactWithInfectedPeople -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ContactWithInfectedPeople">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ContactWithInfluenzaVirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ContactWithInfluenzaVirus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Cause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Dehydration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Dehydration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diarrhea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diarrhea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diarrhoea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diarrhoea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Dizziness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Dizziness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrinkWater -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrinkWater">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LifeStylePrevention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Drowsiness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Drowsiness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DryMouth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DryMouth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Electrolytes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Electrolytes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#NonDrugTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#EscherichiaColi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#EscherichiaColi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BacterialInfection"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <hasDiseaseCause rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BacteriaInUrianryTract"/>
+        <hasDrugTreatment rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drug01"/>
+        <hasPrevention rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DrinkWater"/>
+        <hasRiskFactor rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SexualIntercourse"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#CatheterUse"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ImmuneImpaired"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#MenopausalWomen"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Women"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BloodInUrine"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#HazyUrine"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PainfulUrination"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Fatigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Fecal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Fecal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Transmission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#FecalOral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#FecalOral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Transmission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Fever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Fever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#GoodSanitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#GoodSanitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LifeStylePrevention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#HazyUrine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#HazyUrine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Headache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Headache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ImmuneImpaired -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ImmuneImpaired">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#InfectionOfIntestine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#InfectionOfIntestine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Cause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#InfluenzaA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#InfluenzaA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#VirusInfection"/>
+        <hasDiagnosis rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#BloodTest"/>
+        <hasDiagnosis rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#StoolSample"/>
+        <hasDiagnosis rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ThroatSwabs"/>
+        <hasDiagnosis rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#UrineTest"/>
+        <hasDrugTreatment rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drug02"/>
+        <hasPrevention rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#InfluenzaVaccine"/>
+        <hasRiskFactor rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#WithInfectedPeople"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Children"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#OlderPeople"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PregnantWomen"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SickPeople"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Chills"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Fatigue"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Fever"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Headache"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#MuscleAche"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RunningNose"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SoreThroat"/>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#InfluenzaVaccine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#InfluenzaVaccine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#VaccinePrevention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#KeepWoundsClean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#KeepWoundsClean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LifeStylePrevention"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Lightheadedness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Lightheadedness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LossOfAppetite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LossOfAppetite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LowBloodPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LowBloodPressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#MenopausalWomen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#MenopausalWomen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#MilkProducts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#MilkProducts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#MuscleAche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#MuscleAche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Nausea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Nausea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#NoroVirus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#NoroVirus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Infection"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#VirusInfection"/>
+        <hasDiagnosis rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#StoolSample"/>
+        <hasDiseaseCause rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#InfectionOfIntestine"/>
+        <hasNonDrugTreatment rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Water"/>
+        <hasRiskFactor rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Oysters"/>
+        <hasRiskFactor rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RawVegetables"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ImmuneImpaired"/>
+        <hasRiskGroup rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#OlderPeople"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diarrhea"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Nausea"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#StomachPain"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Vomiting"/>
+        <hasTransmission rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#FecalOral"/>
+        <SiteOfInfection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DigestiveSystem</SiteOfInfection>
+        <duration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</duration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#OlderPeople -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#OlderPeople">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Oral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Oral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Transmission"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Oysters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Oysters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PainfulUrination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PainfulUrination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PelvicPressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PelvicPressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PregnantWomen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PregnantWomen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PusInWound -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#PusInWound">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RawVegetables -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RawVegetables">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RunningNose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RunningNose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SaltedMeat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SaltedMeat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SexualIntercourse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SexualIntercourse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SickPeople -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SickPeople">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SkinRash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SkinRash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SoreThroat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SoreThroat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#StomachPain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#StomachPain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#StoolSample -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#StoolSample">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ThroatSwabs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#ThroatSwabs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Trento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Trento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#City"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#TroubleSleeping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#TroubleSleeping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#UrineTest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#UrineTest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Diagnosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Vomiting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Vomiting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#SideEffect"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Symptom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#NonDrugTreatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#WithInfectedPeople -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#WithInfectedPeople">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskFactors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Women -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Women">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#RiskGroups"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drug01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drug01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AntibioticsDrugTreatment"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AbdominalPain"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Dizziness"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Nausea"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Vomiting"/>
+        <DrugEatenType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral</DrugEatenType>
+        <buyWithPrescription rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</buyWithPrescription>
+        <drugBrandName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Firvanq</drugBrandName>
+        <drugBrandPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</drugBrandPrice>
+        <drugName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vancomycin</drugName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drug02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drug02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#AntiviralsDrugTreatment"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Constipation"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Dizziness"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Drowsiness"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#DryMouth"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Headache"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Lightheadedness"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#LossOfAppetite"/>
+        <hasSideEffect rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Nausea"/>
+        <DrugEatenType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral</DrugEatenType>
+        <buyWithPrescription rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</buyWithPrescription>
+        <drugBrandName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gocovri</drugBrandName>
+        <drugBrandPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</drugBrandPrice>
+        <drugName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amantadine</drugName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacy01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacy01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <farmacyHasDrug rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drug02"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Trento"/>
+        <AddressDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ViaRenatoLunelli40</AddressDetails>
+        <endTime rdf:datatype="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime">21:00</endTime>
+        <farmacyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FarmaciaAISolteri</farmacyName>
+        <openTime rdf:datatype="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime">09:00</openTime>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacy02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacy02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Trento"/>
+        <AddressDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ViaGianantonioManci42</AddressDetails>
+        <farmacyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FarmaciaAllaMadonna</farmacyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacy03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#farmacy03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Pharmacy"/>
+        <farmacyHasDrug rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drug01"/>
+        <farmacyHasDrug rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#drug02"/>
+        <locatedIn rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#Trento"/>
+        <AddressDetails rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ViaAlcideDegasperi94</AddressDetails>
+        <endTime rdf:datatype="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime">21:00</endTime>
+        <farmacyName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FarmaciaComunaleClarina</farmacyName>
+        <openTime rdf:datatype="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#dailytime">09:00</openTime>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:comment rdf:resource="http://www.semanticweb.org/kathrine/ontologies/2018/11/untitled-ontology-13#hasSymptom"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
